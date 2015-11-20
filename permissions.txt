@@ -1,0 +1,9 @@
+insert into user (role, membersinformation_row_add,membersinformation_row_delete,membersinformation_row_modify,
+membersinformation_column_add, membersinformation_column_delete, membersinformation_column_modify, eventinformationtable_row_add, eventinformation_row_delete, eventinformation_row_modify, eventinformation_column_add)
+
+
+insert into user ("admin", 1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,1,1,0);
+insert into user ("participant",0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0);
+insert into user ("manager",0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0);
+insert into user ("guest", 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+
