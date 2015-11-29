@@ -78,7 +78,7 @@
         exit();  
         }  
     //here query check weather if user already registered so can't register again.  
-        $check_email_query="select * from users WHERE user_email='$user_email'";  
+        $check_email_query="select * from membersinformationTable WHERE email='$user_email'";  
         $run_query=mysqli_query($dbcon,$check_email_query);  
       
         if(mysqli_num_rows($run_query)>0)  
@@ -87,7 +87,7 @@
     exit();  
         }  
     //insert the user into the database.  
-        $insert_user="insert into users (user_name,user_pass,user_email) VALUE ('$user_name','$user_pass','$user_email')";  
+        $insert_user="insert into membersinformationTable (mID,first_name,last_name,email,uname,pass,regdate,id) VALUE (1,'kiran','kumar','$user_email','$user_name','$user_pass',20120618, 3)";  
         if(mysqli_query($dbcon,$insert_user))  
         {  
             echo"<script>window.open('welcome.php','_self')</script>";  
