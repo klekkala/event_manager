@@ -58,7 +58,7 @@
       
     <?php  
       
-    include("database/db_conection.php");  
+    include("db_conection.php");  
       
     if(isset($_POST['login']))  
     {  
