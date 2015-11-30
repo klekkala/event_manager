@@ -51,7 +51,7 @@
       
     <?php  
       
-    include("db_connection.php");//make connection here  
+    include("db_conection.php");//make connection here  
     if(isset($_POST['register']))  
     {  
         //$user_name=$_POST['name'];//here getting result from the post array after submitting the form.  
