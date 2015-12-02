@@ -134,7 +134,7 @@
                 }
                 
                 $queryBook=mysql_query("
-                INSERT INTO EventinformationTable VALUES ('$username','$event','$date','$time','$room')
+                INSERT INTO events VALUES ('$username','$event','$date','$time','$room')
                 ");
                 die('<center><div class="alert alert-success" style="width:250px;">
                     <strong>Booking successful!</strong>

@@ -1,0 +1,42 @@
+<div id="bookForm">
+<center>
+    <h3>Form for adding new bookings</h3> <br>
+    <form action="manage.php" method='POST' id="addBooking">
+    <table>
+        <tr>
+            <td>Event Description:  </td>
+            <td><input type ='text' name='event' placeholder="Event Details"></td>
+        </tr>
+        <tr>
+            <td>Pick date and time: </td>
+            <td>
+                <input type="text" name="dateTime" id="dateTime" maxlength="25" size="25" placeholder="Date and time of your event">
+                    <a href="javascript:NewCal('dateTime','ddmmmyyyy',true,24)">
+                    <img src="dateTimePick/cal.gif" width="16" height="16" border="0" alt="Pick a date">
+                    </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Select Venue: 
+            </td>
+            <td>
+                <select name="venue">
+                    <option>Select Venue</option>
+                    <option value="CS101">CS101</option>
+                    <option value="CS102">CS102</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <center><button type="submit" class="btn" name="submit">Book</button></center>
+        </td>
+            <!--<input type='submit' value='Register' name='submit'>-->
+        </tr>
+    </table>
+    </form>
+</center>
+</div>
+</body>
+</html>
